@@ -1,0 +1,65 @@
+/* Container général des tabs */
+.tabs { 
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    margin: 1em 0; /* tu peux ajuster le top/bottom */
+}
+
+/* Barre des onglets qui touche les bords */
+.tabs .tab-registers {
+    display: flex;
+    width: 100vw; /* prend toute la largeur de l'écran */
+    margin: 0; /* annule toute marge */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 0; /* coins carrés pour toucher les bords */
+    overflow: hidden;
+}
+
+/* Style des boutons */
+.tabs button {
+    flex: 1; /* prend toute la largeur également */
+    padding: 1em;
+    background-color: #fff;
+    border: none;
+    font: inherit;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Hover animé */
+.tabs button:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+/* Onglet actif */
+.tabs button.active-tab {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Contenu des tabs */
+.tabs .tab-bodies {
+    padding: 1em;
+    background-color: #f5f5f5;
+    min-height: 150px;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Animation de transition des contenus */
+.tabs .tab-bodies > div {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.tabs .tab-bodies > div.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Une bonne nuit de sommeil</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #0e2c4c;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 2rem;
+    }
+
+    h2, h3 {
+      margin: 10px 0;
+    }
+
+    .highlight {
+      color: #fcd34d;
+      font-weight: bold;
+    }
+
+    .ages {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .age-card {
+      background-color: #1e3a5f;
+      border-radius: 10px;
+      padding: 15px;
+      width: 18%;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .age-card img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+
+    .age-card span {
+      display: block;
+      margin-top: 5px;
+      font-weight: bold;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .benefit {
+      background-color: #1e3a5f;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .benefit img {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+
+    .bedtime-table {
+      margin-top: 30px;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th, td {
+      border: 1px solid #fff;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #1e3a5f;
+    }
+
+    td {
+      background-color: #2a4b6b;
+    }
+
+    td.red { background-color: #f87171; }
+    td.orange { background-color: #fb923c; }
+    td.green { background-color: #34d399; }
+  </style>
+</head>
+<body>
+  <h1>Une bonne nuit <span class="highlight">de sommeil</span></h1>
+  <p>Le sommeil est indispensable à notre équilibre, il nous permet de reprendre des forces, de nous réveiller en forme et de grandir !</p>
+
+  <h2>Le temps de sommeil par âge</h2>
+  <div class="ages">
+    <div class="age-card">
+      <img src="baby.png" alt="Bébé">
+      <h3>Bébé</h3>
+      <span>15 à 18h / Nuit</span>
+    </div>
+    <div class="age-card">
+      <img src="child.png" alt="Enfant">
+      <h3>Enfant</h3>
+      <span>10 à 14h / Nuit</span>
+    </div>
+    <div class="age-card">
+      <img src="teen.png" alt="Adolescent">
+      <h3>Adolescent</h3>
+      <span>9 à 10h / Nuit</span>
+    </div>
+    <div class="age-card">
+      <img src="adult.png" alt="Adulte">
+      <h3>Adulte</h3>
+      <span>7 à 8h / Nuit</span>
+    </div>
+    <div class="age-card">
+      <img src="elderly.png" alt="Personne âgée">
+      <h3>Personne âgée</h3>
+      <span>5 à 6h / Nuit</span>
+    </div>
+  </div>
+
+  <h2>Que se passe-t-il <span class="highlight">quand je dors ?</span></h2>
+  <div class="benefits">
+    <div class="benefit">
+      <img src="tired.png" alt="Récupérer">
+      <h3>Je récupère</h3>
+      <p>De la fatigue physique mais aussi du stress de la journée grâce aux rêves.</p>
+    </div>
+    <div class="benefit">
+      <img src="growth.png" alt="Je grandis">
+      <h3>Je grandis</h3>
+      <p>C'est pendant le sommeil que l'hormone de croissance est sécrétée.</p>
+    </div>
+    <div class="benefit">
+      <img src="memory.png" alt="Je mémorise">
+      <h3>Je mémorise</h3>
+      <p>Toutes les activités de la journée et je permets à mon cerveau de les ranger !</p>
+    </div>
+    <div class="benefit">
+      <img src="immune.png" alt="Je me renforce">
+      <h3>Je me renforce</h3>
+      <p>Contre les virus ! La nuit, le taux de globules blancs est à son maximum.</p>
+    </div>
+  </div>
+
+  <h2>Heures de coucher selon l’âge et l’heure de réveil</h2>
+  <div class="bedtime-table">
+    <table>
+      <tr>
+        <th>Âge</th>
+        <th>6h30</th>
+        <th>7h00</th>
+        <th>7h30</th>
+      </tr>
+      <tr><td>5 ans</td><td class="red">19h15</td><td class="orange">19h30</td><td class="green">20h15</td></tr>
+      <tr><td>6 ans</td><td class="red">19h30</td><td class="orange">20h00</td><td class="green">20h30</td></tr>
+      <tr><td>7 ans</td><td class="red">19h30</td><td class="orange">20h15</td><td class="green">20h45</td></tr>
+      <tr><td>8 ans</td><td class="red">20h00</td><td class="orange">20h30</td><td class="green">21h00</td></tr>
+      <tr><td>9 ans</td><td class="red">20h15</td><td class="orange">20h45</td><td class="green">21h15</td></tr>
+      <tr><td>10 ans</td><td class="red">20h30</td><td class="orange">21h15</td><td class="green">21h30</td></tr>
+      <tr><td>11 ans</td><td class="red">20h45</td><td class="orange">21h15</td><td class="green">21h45</td></tr>
+      <tr><td>12 ans</td><td class="red">20h45</td><td class="orange">21h15</td><td class="green">21h45</td></tr>
+      <tr><td>13 ans et +</td><td class="red">21h00</td><td class="orange">21h30</td><td class="green">22h00</td></tr>
+    </table>
+  </div>
+</body>
+</html>
